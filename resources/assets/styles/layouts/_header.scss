@@ -1,9 +1,59 @@
-@include sm{
-    body{
-        background: red;
-    }
+.header-top {
+  height: (87px+21);
+  background: $pink;
+  border-bottom: 21px solid #000;
+  @include sm {
+    height: 80px;
+    border-bottom-width: 10px;
+  }
 }
 
-body{
-    font-size: 0;
+.main-header {
+  padding-top: em(25px);
+  .logo {
+    $p: 30px;
+    &:before,
+    &:after {
+      content: "";
+      background: url(../images/star.png) no-repeat;
+      background-size: 100% 100%;
+      width: 98px;
+      height: 66px;
+      position: absolute;
+      left: $p;
+      top: 10%;
+      @include sm {
+        display: none;
+      }
+    }
+    &:after {
+      left: auto;
+      right: $p;
+    }
+  }
+}
+
+.main-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  @include md {
+    display: none !important;
+  }
+  li {
+    padding: 10px 0;
+  }
+  a {
+    font-size: em(17px);
+    text-transform: uppercase;
+    color: $black;
+    font-weight: 600;
+    @include lg {
+      font-size: 14px;
+    }
+    &:hover,
+    &.active {
+      color: $pink;
+    }
+  }
 }

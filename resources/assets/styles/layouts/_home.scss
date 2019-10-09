@@ -1,0 +1,86 @@
+.gif-images {
+  img {
+    width: 100%;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.notify {
+  font-family: $n;
+  background: $yellow;
+  font-size: em(19px);
+  text-transform: uppercase;
+  padding: 0 5px;
+}
+
+.puppies-slider {
+  .item {
+    .img {
+      height: 162px;
+      margin-bottom: em(20px);
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.slick-arrow {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -25px;
+  z-index: 2;
+  cursor: pointer;
+  &.slick-disabled {
+    opacity: 0.4;
+  }
+  &.right {
+    left: auto;
+    right: 0;
+  }
+  &.left {
+    transform: rotate(180deg);
+  }
+}
+
+.slick-dots {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  padding-top: 20px;
+  button {
+    display: none;
+  }
+  li {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    background: $pink;
+    margin: 0 3px;
+    cursor: pointer;
+    &.slick-active {
+      background: $yellow;
+    }
+  }
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+  grid-column-gap: 18px;
+  padding: 0 2.196vw;
+}
+
+.video {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-gap: 50px;
+  @include md {
+    grid-gap: 25px;
+  }
+}

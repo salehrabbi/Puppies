@@ -2,7 +2,65 @@ extends layouts/app.jade
 
 block title
   title Home
-  
+
 block main
-  <i class="fas fa-ad"></i>
-  <i class="fal fa-angle-right"></i>
+  section.gif-images
+    +img('Gif-Home-Frenchie.gif','img', 'item-1')
+    +img('Gif-Home-Pomsky.gif','img', 'item-2')
+    +img('Gif-Home-Poodle.gif','img', 'item-3')
+    +img('Gif-Home-Pom.gif','img', 'item-4')
+    +img('Gif-Home-Yorkie.gif','img', 'item-5')
+  section.carousel-puppies.space
+    .container
+      .row
+        .col-12.text-center
+          h2 Just arrived
+      .puppies-slider.text-center
+        +slide('p-1.png','Fetty','Teacup French Bulldog')  
+        +slide('p-2.png','Finnigan','Micro Pomenarian')  
+        +slide('p-3.png','Hoppy','Teacup Pomsky')  
+        +slide('p-4.png','Nate','Micro Poodle')  
+        +slide('p-5.png','Nugget','Micro Yorkie')
+        +slide('p-1.png','Fetty','Teacup French Bulldog')  
+        +slide('p-2.png','Finnigan','Micro Pomenarian')  
+        +slide('p-3.png','Hoppy','Teacup Pomsky')  
+        +slide('p-4.png','Nate','Micro Poodle')  
+        +slide('p-5.png','Nugget','Micro Yorkie')
+
+  section.banner
+    +img('Banner left.png', 'w-100')
+    +img('Banner right.png', 'w-100')  
+
+  section.carousel-puppies.space
+    .container
+      .row
+        .col-12.text-center
+          h2.pink-color Title of the Section
+      .puppies-slider.text-center
+        +slide('p-1.png','Fetty','Teacup French Bulldog')  
+        +slide('p-2.png','Finnigan','Micro Pomenarian')  
+        +slide('p-3.png','Hoppy','Teacup Pomsky')  
+        +slide('p-4.png','Nate','Micro Poodle')  
+        +slide('p-5.png','Nugget','Micro Yorkie')
+        +slide('p-1.png','Fetty','Teacup French Bulldog')  
+        +slide('p-2.png','Finnigan','Micro Pomenarian')  
+        +slide('p-3.png','Hoppy','Teacup Pomsky')  
+        +slide('p-4.png','Nate','Micro Poodle')  
+        +slide('p-5.png','Nugget','Micro Yorkie')  
+  .container
+    .row
+      .col-12.text-center
+        h2.pink-color Videos    
+  section.video.container.space-b
+    .item
+      +img('video 1.png')
+    .item
+      +img('video 1.png')
+    .item
+      +img('video 1.png')
+    .item
+      +img('video 1.png')
+    .item
+      +img('video 1.png')
+    .item
+      +img('video 1.png')      

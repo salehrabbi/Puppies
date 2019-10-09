@@ -1,1 +1,59 @@
 @import url(../fonts/_font.css);
+
+body {
+  font-family: $f;
+  color: $black;
+}
+
+.container {
+  max-width: 1030px;
+}
+
+h2 {
+  font-size: 76px;
+  color: $black;
+  font-family: $b;
+  margin: 0;
+  margin-bottom: calc-em(28, 76);
+}
+
+img {
+  max-width: 100%;
+}
+
+a.title {
+  font-size: em(12px);
+  font-weight: 700;
+  color: $black;
+  &:hover {
+    color: $yellow;
+  }
+}
+p {
+  font-size: em(12px);
+}
+
+.space {
+  padding: 50px 0;
+  &-t {
+    padding-top: 50px;
+  }
+  &-b {
+    padding-bottom: 50px;
+  }
+  @include md {
+    padding: 40px 0;
+    &-t {
+      padding-top: 40px;
+    }
+    &-b {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+.pink {
+  &-color {
+    color: $pink;
+  }
+}
