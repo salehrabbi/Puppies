@@ -52,8 +52,11 @@ p {
   }
 }
 
-.pink {
-  &-color {
+.color {
+  &-pink {
     color: $pink;
+  }
+  &-yellow {
+    color: $yellow;
   }
 }
