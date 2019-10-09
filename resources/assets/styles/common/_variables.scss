@@ -1,3 +1,28 @@
+:root {
+  --Gotham: "Gotham";
+  --Bebas-Neue: "Bebas Neue";
+  --Beattingvile: "Beattingvile";
+  --pink: #ff8dad;
+  --dark-yellow: #f7d27f;
+  --light-yellow: #eccf89;
+  --light-black: #1c120d;
+  --gray: #e1e4e6;
+}
+
+// =================color
+
+$pink: var(--pink);
+$dyellow: var(--dark-yellow);
+$lyellow: var(--light-yellow);
+$lblack: var(--light-black);
+$gray: var(--gray);
+$black: var(--black);
+
+// ================= fonts
+$f: var(--Gotham);
+$b: var(--Beattingvile);
+$n: var(--Bebas-Neue);
+
 // Small tablets and large smartphones (landscape view)
 $screen-sm-max: 575px;
 
@@ -10,44 +35,40 @@ $screen-lg-max: 991px;
 // Large tablets and desktops
 $screen-xl-max: 1199px;
 
-
-
 // Small devices
 @mixin sm {
-   @media (max-width: #{$screen-sm-max}) {
-       @content;
-   }
+  @media (max-width: #{$screen-sm-max}) {
+    @content;
+  }
 }
 
 // Medium devices
 @mixin md {
-   @media (max-width: #{$screen-md-max}) {
-       @content;
-   }
+  @media (max-width: #{$screen-md-max}) {
+    @content;
+  }
 }
 
 // Large devices
 @mixin lg {
-   @media (max-width: #{$screen-lg-max}) {
-       @content;
-   }
+  @media (max-width: #{$screen-lg-max}) {
+    @content;
+  }
 }
 
 // Extra large devices
 @mixin xl {
-   @media (max-width: #{$screen-xl-max}) {
-       @content;
-   }
+  @media (max-width: #{$screen-xl-max}) {
+    @content;
+  }
 }
-
 
 // Custom devices
 @mixin rwd($screen) {
-   @media (max-width: $screen+'px') {
-       @content;
-   }
+  @media (max-width: $screen+"px") {
+    @content;
+  }
 }
-
 
 $rem-baseline: 16px !default;
 $rem-fallback: false !default;
@@ -82,7 +103,14 @@ $rem-px-only: false !default;
   @each $value in $values {
     @if type-of($value) == "number" and unit($value) == "rem" and $to == "px" {
       $result: append($result, $value / 1rem * $rem-baseline, $separator);
-    } @else if type-of($value) == "number" and unit($value) == "px" and $to == "rem" {
+    } @else if
+      type-of($value) ==
+      "number" and
+      unit($value) ==
+      "px" and
+      $to ==
+      "rem"
+    {
       $result: append($result, $value / $rem-baseline * 1rem, $separator);
     } @else if type-of($value) == "list" {
       $value-separator: rem-separator($value);
@@ -121,7 +149,6 @@ $rem-px-only: false !default;
     }
   }
 }
-
 
 $browser-context: 16;
 
