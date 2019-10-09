@@ -6,7 +6,7 @@ $(".puppies-slider").slick({
   slidesToScroll: 1,
   prevArrow: '<img class="left" src="dist/images/Path.png" >',
   nextArrow: '<img class="right" src="dist/images/Path.png" >',
-  autoplay: true,
+  autoplay: false,
   responsive: [
     {
       breakpoint: 991,

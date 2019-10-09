@@ -28,48 +28,6 @@
   }
 }
 
-.slick-arrow {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  margin-top: -25px;
-  z-index: 2;
-  cursor: pointer;
-  &.slick-disabled {
-    opacity: 0.4;
-  }
-  &.right {
-    left: auto;
-    right: 0;
-  }
-  &.left {
-    transform: rotate(180deg);
-  }
-}
-
-.slick-dots {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-  padding-top: 20px;
-  button {
-    display: none;
-  }
-  li {
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    display: inline-block;
-    background: $pink;
-    margin: 0 3px;
-    cursor: pointer;
-    &.slick-active {
-      background: $yellow;
-    }
-  }
-}
-
 .banner {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
