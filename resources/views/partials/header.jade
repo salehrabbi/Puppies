@@ -4,15 +4,16 @@ header.main-header
   .container
     .row
       .col-12.text-center.logo.pb-4
-        +img('logo.png')
+        a(href="index.html")
+          img(src="dist/images/logo.png" alt="")
   .container
-    ul.main-menu.d-flex.justify-content-between
+    ul.main-menu.d-flex.flex-wrap.justify-content-md-between.justify-content-center
       li
-        a.active(href="#") SHOP AVALIABLE PUPPIES    
+        a(href="#") SHOP AVALIABLE PUPPIES    
       li
         a(href="#") HOW TO BUY 
       li
-        a(href="#") ABOUT US
+        a.active(href="#") ABOUT US
       li
         a(href="#") HEALTH GUARANTEE
       li

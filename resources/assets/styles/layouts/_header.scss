@@ -37,11 +37,11 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  @include md {
-    display: none !important;
-  }
   li {
     padding: 10px 0;
+    @include md {
+      padding: 5px 10px;
+    }
   }
   a {
     font-size: em(17px);

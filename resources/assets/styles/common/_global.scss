@@ -15,6 +15,9 @@ h2 {
   font-family: $b;
   margin: 0;
   margin-bottom: calc-em(28, 76);
+  @include sm {
+    line-height: 1;
+  }
 }
 
 img {
