@@ -1,0 +1,51 @@
+extends layouts/app.jade
+
+block title
+  title Home
+
+block main
+  .product-slider.space.page
+    .container
+      .row
+        .col-lg-6.d-flex.mb-2.flex-wrap
+          .slider-nav-wraper
+            .slider-nav
+              - for (var x=1; x<4; x++)
+                .item
+                  img(src="dist/images/dog.png" alt="")
+          .slider-for-wraper        
+            .slider-for
+              - for (var x=1; x<4; x++)
+                .item
+                  .zoom
+                    img(src='dist/images/dog.png' alt='')
+        .col-lg-6
+          .product-details
+            .title Philly Blue Tiny French Bulldog
+            p.color-gray.font-weight-light.mb-3 
+              | Hello, my name is Fetty. I am a loving pup with big
+              | baby blue eyes. I have been vet checked from head to
+              | tail and all of my vaccinations are up to date. I am very
+              | playful and I just can’t wait to play with you. Hopefully
+              | we will meet real soon so you can see how gorgeous I
+              | really am in person. Hurry, hurry, my sweet puppy
+              | kisses are waiting.”
+            p.color-pink.font-weight-bold.mb-3 Price: 8,800.00
+            a.button.btn.py-0.mb-4(href="#") Apply Now  
+            .row
+              .col-6
+                p.m-0.color-gray.font-weight-light.mb-2  
+                  b Name: Philly
+                  br
+                  | Breed: Micro Poodle
+                  br
+                  | Color: Red
+                  br
+                  | Gender: Male
+                  br
+                  | Size max: 2.5 LBS
+                  br
+                  | Price: $6,800.00
+              .col-6.text-right
+                img(src="dist/images/p-logo.png" alt="")  
+

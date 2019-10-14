@@ -79,3 +79,31 @@ $(".gif-images").slick({
     }
   ]
 });
+
+$(".slider-for").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  asNavFor: ".slider-nav"
+});
+$(".slider-nav").slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: ".slider-for",
+  focusOnSelect: true,
+  vertical: true,
+  prevArrow: '<img class="left" src="dist/images/Path.png" >',
+  nextArrow: '<img class="right" src="dist/images/Path.png" >',
+  responsive: [
+    {
+      breakpoint: 400,
+      settings: {
+        vertical: false
+      }
+    }
+  ]
+});
+
+$(document).ready(function() {
+  $(".zoom").zoom();
+});

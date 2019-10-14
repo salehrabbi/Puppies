@@ -1,0 +1,104 @@
+.page {
+  position: relative;
+  &:before {
+    content: "";
+    height: 9px;
+    background-image: linear-gradient(to top, #ffffff 0%, #edeef0 100%);
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+}
+
+.bread-page {
+  h2 {
+    font-family: $n;
+    color: #f7d27f;
+    font-size: 65px;
+    letter-spacing: -0.44px;
+  }
+  .item {
+    .title {
+      font-size: 13px;
+      color: #686868;
+      &:hover {
+        color: $yellow;
+      }
+    }
+    p {
+      color: #686868;
+      font-size: 13px;
+      line-height: 1.4;
+      font-weight: 300;
+    }
+  }
+}
+
+// ========================= product slider
+.slider-nav {
+  &-wraper {
+    width: 86px;
+    @include rwd(400) {
+      width: 100%;
+    }
+  }
+  .slick-arrow {
+    width: 10px;
+    top: -26px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: rotate(-90deg);
+  }
+  .slick-arrow.right {
+    left: 0;
+    top: auto;
+    bottom: -26px;
+    right: 0;
+    transform: rotate(90deg);
+  }
+  .item {
+    padding: 3px 0;
+    cursor: pointer;
+  }
+  .slick-current {
+    opacity: 0.5;
+  }
+}
+.slider-for {
+  &-wraper {
+    width: calc(100% - 86px);
+    padding-left: 8px;
+    @include rwd(400) {
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+  .item {
+    padding: 4px 0;
+  }
+}
+
+// =============================== product-details
+.product-details {
+  .title {
+    font-size: em(15px);
+    font-weight: 700;
+    margin-bottom: 3px;
+  }
+}
+
+.zoom {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.zoom img {
+  display: block;
+}
+
+.zoom img::selection {
+  background-color: transparent;
+}

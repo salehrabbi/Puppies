@@ -1,0 +1,28 @@
+extends layouts/app.jade
+
+block title
+  title Home
+
+block main
+  section.bread-page.space.page
+    .container
+      .row
+        .col-12.text-center
+          h2.color-yellow MICRO POODLE
+      .row
+        - for (var x=1; x<13; x++)
+          .col-lg-3.col-md-4.col-sm-6
+            .item.text-center.py-4
+              div.mx-auto(style="max-width: 400px")
+                img.w-100(src="dist/images/bread.png" alt="")
+              a.title.mt-2.d-inline-block(href="#") Name: Philly
+              p.m-0 
+                | Breed: Micro Poodle
+                br
+                | Color: Red
+                br
+                | Gender: Male
+                br
+                | Size max: 2.5 LBS
+                br
+                | Price: $6,800.00
