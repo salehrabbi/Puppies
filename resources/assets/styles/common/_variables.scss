@@ -12,17 +12,17 @@
 
 // =================color
 
-$pink: var(--pink);
-$dyellow: var(--dark-yellow);
-$lyellow: var(--light-yellow);
-$lblack: var(--light-black);
-$gray: var(--gray);
-$black: var(--black);
+$pink: #ff8dad;
+$dyellow: #f7d27f;
+$lyellow: #eccf89;
+$lblack: #1c120d;
+$gray: #e1e4e6;
+$black: #000;
 
 // ================= fonts
-$f: var(--Gotham);
-$b: var(--Beattingvile);
-$n: var(--Bebas-Neue);
+$f: "Gotham";
+$b: "Beattingvile";
+$n: "Bebas Neue";
 
 // Small tablets and large smartphones (landscape view)
 $screen-sm-max: 575px;
