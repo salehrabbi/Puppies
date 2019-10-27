@@ -11,14 +11,12 @@ block main
           .slider-nav-wraper
             .slider-nav
               - for (var x=1; x<4; x++)
-                .item
-                  img(src="dist/images/dog.png" alt="")
+                .item(style="background-image: url(dist/images/dog.png)")
           .slider-for-wraper        
             .slider-for
               - for (var x=1; x<4; x++)
                 .item
-                  .zoom
-                    img(src='dist/images/dog.png' alt='')
+                  <a data-fancybox="gallery" href="dist/images/dog.png"><img src="dist/images/dog.png"></a>
         .col-lg-6
           .product-details
             .title Philly Blue Tiny French Bulldog

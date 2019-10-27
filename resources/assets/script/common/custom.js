@@ -84,7 +84,8 @@ $(".slider-for").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
-  asNavFor: ".slider-nav"
+  asNavFor: ".slider-nav",
+  draggable: false
 });
 $(".slider-nav").slick({
   slidesToShow: 3,
@@ -102,8 +103,4 @@ $(".slider-nav").slick({
       }
     }
   ]
-});
-
-$(document).ready(function() {
-  $(".zoom").zoom();
 });

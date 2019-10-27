@@ -59,8 +59,12 @@
     transform: rotate(90deg);
   }
   .item {
-    padding: 3px 0;
+    margin: 3px 0;
     cursor: pointer;
+    width: 84px;
+    height: 73px;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .slick-current {
     opacity: 0.5;
@@ -77,6 +81,9 @@
   }
   .item {
     padding: 4px 0;
+    img {
+      max-height: 391px;
+    }
   }
 }
 
